@@ -92,7 +92,14 @@ function calculateFoodTotal(food, tip) {
 
 // ES6
 // Arrow Functions => 
+// arrow function with explicit return
 const sumArrow  = (a, b) => {
   return a + b
 }
+// arrow function with implicit return
+// IMPORTANT : For implicit return, remove curly braces
+const sumArrow2 = (a, b) => a + b
+
+console.log(sumArroq(10, 50))
+
 // Type casting
