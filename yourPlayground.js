@@ -88,7 +88,7 @@ function calculateFoodTotal(food, tip) {
   return total
 }
 
- console.log(calculateFoodTotal(300, 20))
+ // console.log(calculateFoodTotal(300, 20))
 
 // ES6
 // Arrow Functions => 
@@ -103,3 +103,162 @@ const sumArrow2 = (a, b) => a + b
 console.log(sumArroq(10, 50))
 
 // Type casting
+
+// Array methods
+
+groceries.push('kela')
+// Arrays Slice
+// start from 0 INCLUSIVE and UP to 2 [0, 1]
+// groceries = {'kela' , 'seb' , 'santra' , 'amrudh'}
+// console.log(groceries.slice(0, 5))
+
+// console.log(groceries.slice(3, 6))
+// cosle.log(groceries.slice(1,4))
+// // array methods (slice, push, indexof, length)
+// console.log(groceies.indexOf)
+
+// OBJECTS {}
+// par of key and value
+const person = {
+  name: 'Lenardo',
+  shirt: 'white'
+}
+
+// access object : dot notation vs. bracket notation
+console.log(person.name)
+console.log(person.shirt)
+
+// backet notation
+console.log(person['name'])
+console.log(person['shirt'])
+
+// assign object
+person.phone = '9625631486'
+console.log(person.phone)
+
+console.log(person)
+
+//person 2
+const person2 = {
+  name = 'Himanshu',
+  shirt = 'Black'
+}
+person2.phone = '88555888858'
+console.log(person2)
+console.log(person2.name)
+console.log(person2.shirt)
+
+//  es6 arrow function {2 arguments}
+//  object
+// template literals
+// methods Math.floor()
+const introducer = (name, shirt) => {
+  const person = {
+    name: name,
+    shirt: shirt,
+    assets: 10000,
+    liability: 50000,
+    netWorth: function () {
+      return this.assets - this.liabilities
+    }
+  }
+  const intro = 'Hi, my name is ${person.name} and the color of my shirt is ${person.shirt} and my ney worth is ${person.newWorth()} USD')
+  
+  return intro
+}
+// console.log(introducer('Qazi', 'Black'))
+// console.log(introducer('Leonardo', 'shirt'))
+
+const fruits = ['kela', 'part' , 'party']
+
+// cosole.log(fruits[0])
+// console.log(fruits[1])
+// console.log(fruits[2])
+
+// for (let i=0; i<fruits.length; i++){
+//   console.log(i, fruits[i])
+// }
+
+const double = (number) => {
+  let result = []
+  for (const number of numbers) {
+    result.push(number * 2)
+  }
+  return result
+}
+
+// console.log(double([1, 2, 3, 4, 5, 6, 7]))
+
+const howManyLetters = () => {
+  return { result: phrase.length }
+  // counter
+  let result = 0;
+
+  for (const index in phrase) {
+    console.log(Number(index) + 1)
+    result = Number(index) + 1
+  }
+  return { result }
+}
+// const phrase = prompt('write your phrase')
+
+// console.log(howManyLetters(phrase))
+
+const sumArray = (numbers) => {
+  let result = 0:
+  // for loop
+  for (const number of numbers) {
+    console.log(number)
+    result = result + number
+  }
+  return { result }
+}
+
+const nums = [1, 2, 3, 4, 5]
+console.log(sumArray(nums))
+// sum up all numbers in array
+
+const max = (numbers) => {
+  const result = numbers[0]
+  // loop
+  for (const number of numbers) {
+    if (number > result) {
+      result = number
+    }
+  }
+  return { result }
+}
+// console.log(max(1, 2, 3, 4,))
+
+const letterfrequency = {phrase} => {
+  // letter frequency ('haha') -->('h1': 2, 'a': 1)
+  console.log(phrase)
+  // make a 'frequency' object ()
+  for (const letter of phrase) {
+    // check if letter exist in frequency
+    if (letter in fequency) {
+      // increment the value +1
+      frequency[letter] = frequency[letter] + 1
+    // otherwise, set the value to 1
+  } else{
+      frequency[letter] = 1
+    }
+  return frequency
+}
+  console.log(letterfrequency('lol, what are youdoing later tonight, haha!'))
+
+
+
+  // incremental operators
+  //  ++, ==, +=,
+  
+}
+
+// cosnole.log(letterFrequency('haha'))
+// wordFrequency('lol what lol') {'lol': 2, 'what':1}
+const wordFrequency = (phrase) => {
+  words =phrase.split(' ')
+  return letterFrefquency(words)
+}
+const userInput = prompt('Write your sentence')
+console.log(wordFrequency('lol what lol'))
