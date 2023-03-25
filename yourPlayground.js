@@ -262,3 +262,49 @@ const wordFrequency = (phrase) => {
 }
 const userInput = prompt('Write your sentence')
 console.log(wordFrequency('lol what lol'))
+
+// higher order functions
+// map -loops and return an array
+// filter
+// reduce
+
+// Map
+const doubleMap = (numbers) => {
+  return numbers.map(number => number*2)
+}
+
+console.log(doubleMap([1, 2, 3]))
+// console.log(doubleMap([1, 2, 3]))
+
+// filter([1,2,3,4,5,6], 3) --> [4,, 5, 6]
+const filter = (numbers, greaterThan) => {
+  let result = []
+  for (const number of numbers) {
+    if (number > greaterThan) {
+      result.push(number)
+    }
+  }
+  return result
+}
+// console.log(filter([1, 2, 3, 4, 5, 6], 2))
+const nums = [1,2,3,4,5,6]
+console.log(nums.filter(nums => nums > 3 || num<2))
+
+const actors = [
+  {name: 'johnny', newtworth: 200000},
+  {name: 'amber', networth: 10},
+  {name: 'leonardo', networth: 100000},
+]
+console.log(actor.filter(actor => actor.networth > 10))
+console.log(nums.filter(nums => num>4 || num<2))
+// if (userIsAunthenticated && userIsPayingMember) {
+//     show youtube videos
+// } else{
+
+// }
+// 
+// 
+let result = actor.filter(actor => actor.netwoth>10)
+console.log(result)
+let names = result.map(ator => actor.networth > 10)
+playground.innerHTML = '<h1>${JSON.stringify(result)}</h1>'
