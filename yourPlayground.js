@@ -295,16 +295,36 @@ const actors = [
   {name: 'amber', networth: 10},
   {name: 'leonardo', networth: 100000},
 ]
-console.log(actor.filter(actor => actor.networth > 10))
-console.log(nums.filter(nums => num>4 || num<2))
+console.log(actors.reduce((prev, curr) => prev + curr.networth, 0))
+
+// console.log(actor.filter(actor => actor.networth > 10))
+// console.log(nums.filter(nums => num>4 || num<2))
 // if (userIsAunthenticated && userIsPayingMember) {
 //     show youtube videos
 // } else{
 
-// }
-// 
-// 
-let result = actor.filter(actor => actor.netwoth>10)
+// } 
+// let result = actor.filter(actor => actor.netwoth>10)
+// console.log(result)
+// let names = result.map(ator => actor.networth > 10)
+// playground.innerHTML = '<h1>${JSON.stringify(result)}</h1>'
+
+// reduce
+// sum all of the net worths
+//  SUM: think reduce
+// reduce takes in a function as an argument
+// reduce loops and gives you back the accumulator
+function sum(a, b) {
+  // return
+  return a + b
+}
+
+function multiply(a, b) {
+  // return
+  return a * b
+}
+
+const nums = [1, 2, 3]
+const result = nums.reduce((a, b) => a + b)
 console.log(result)
-let names = result.map(ator => actor.networth > 10)
-playground.innerHTML = '<h1>${JSON.stringify(result)}</h1>'
+
