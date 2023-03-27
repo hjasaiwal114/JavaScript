@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "Block Site Extension",
+    "version": "1.0",
+    "description": "Blocks a particular site and shows a wanted text",
+    "permissions": [
+      "webRequest",
+      "webRequestBlocking",
+      "storage",
+      "tabs"
+    ],
+    "background": {
+      "scripts": ["background.js"],
+      "persistent": false
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
