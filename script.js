@@ -16,7 +16,7 @@ titleDiv.style.backgroundColor = 'blue'
 
 let redDiv = document.getElementById('red')
 let yellowDiv = document.getElementById('yellow')
-let greenDiv  = document.getElementById('green')
+let greenDiv = document.getElementById('green')
 
 redDiv.oneclick = () => {
   console.log('user chose: Rock')
