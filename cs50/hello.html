@@ -3,15 +3,20 @@
     <head>
         <title>Count</title>
         <script>
-            let counter = 0;
-            function count() {
-                counter++;
-                document.querySelector('h1').innerHTML = counter;
-            }
+            document.addEventListener('DOMContentLoaded', function() {
+                document.querySelector('form').onsubit = function(){
+                   const name =  document.querySelector('#name').value;
+                   alert(`Hello, ${name}!`)
+                };
+
+            });
         </script>
     </head>
     <body>
-        <h1>0</h1>
-        <button onclick="count()">Count</button>
+        <h1>Hello!</h1>
+        <form >
+            <input autofocus id = 'name' placeholder="Name" type = "text" >
+            <input type="submt">
+        </form>
     </body>
 </html>
