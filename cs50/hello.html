@@ -8,7 +8,12 @@
     <script>
 
         function hello() {
-            alert('Hello, world');
+            if (document.querySelector('h1').innerhtml === 'Hello'){
+                document.querySelector('h1').innerhtml = 'Goodbye';
+            } else {
+                document.querySelector('h1').innerHtml = 'Hello';
+            }
+            
         }
         
     </script>
