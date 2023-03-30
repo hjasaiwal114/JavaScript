@@ -1,25 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello</title>
-    <script>
-
-        function hello() {
-            if (document.querySelector('h1').innerhtml === 'Hello'){
-                document.querySelector('h1').innerhtml = 'Goodbye';
-            } else {
-                document.querySelector('h1').innerHtml = 'Hello';
+    <head>
+        <title>Count</title>
+        <script>
+            let counter = 0;
+            function count() {
+                counter++;
+                document.querySelector('h1').innerHTML = counter;
             }
-            
-        }
-        
-    </script>
-</head>
-<body>
-    <h1>Hello!</h1>
-    <button oneclick="hello()">Click Here</button>
-</body>
+        </script>
+    </head>
+    <body>
+        <h1>0</h1>
+        <button onclick="count()">Count</button>
+    </body>
 </html>
