@@ -1,0 +1,42 @@
+<!-- creating copy of code -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>copy</title>
+    <style>
+        button {
+            padding: 8px 16px;
+            background-color: aqua;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="textInput">Enter Text</label>
+        <textarea  id="textInput"></textarea>
+        <button id ="copyButton">copy</button>
+      </div>
+    <script>
+        const textInput = document.getElementById("textInput");
+        const copyButton = document.getElementById("copyButton");
+
+        copyButton.addEventListener("click", function() {
+        const text = textInput.value;
+        navigator.clipboard.writeText(text).then(function() {
+            console.log('Copied to clipboard: ' + text);
+        }, function(err) {
+            console.error('Failed to copy to clipboard: ' + err);
+        });
+        });
+
+
+    </script>
+</body>
+</html>
