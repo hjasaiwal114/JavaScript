@@ -16,7 +16,7 @@
         var carName1 = "Bantley";
         var carName2 = "Bmw";
 
-        document.getElementById("demo").innnerHTML = carName1 + " " + carName2;
+        document.getElementById("demo").innerHTML = carName1 + " " + carName2;
     </script>
     
 </body>
